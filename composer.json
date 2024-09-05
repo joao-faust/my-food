@@ -1,0 +1,25 @@
+{
+  "name": "my/food",
+  "autoload": {
+    "psr-4": {
+      "App\\": "App/"
+    }
+  },
+  "authors": [
+    {
+      "name": "João Faust"
+    },
+    {
+      "name": "Enricky Hipólito"
+    },
+    {
+      "name": "Kaynan Felipe"
+    },
+    {
+      "name": "Paulo Malheiros"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.6"
+  }
+}

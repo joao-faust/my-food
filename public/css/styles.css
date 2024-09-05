@@ -1,0 +1,255 @@
+img {
+  max-width: 100%;
+}
+
+.categoria-alimentos a {
+  text-decoration: none;
+  color: black;
+}
+
+.categoria-alimentos a:active .alimento {
+  text-decoration: none;
+  background-color: rgb(232, 232, 232);
+  color: black;
+}
+
+
+:target {
+  scroll-margin-top: 150px;
+}
+
+header {
+  background-color: #E53535;
+  position: sticky;
+  top: 0;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  color: white;
+  margin: 0;
+  padding: 0 10px;
+  overflow-x: auto;
+}
+
+header nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+header nav a:active {
+  background-color: #df5c5c;
+}
+
+.main-container {
+  margin-bottom: 85px;
+}
+
+.toogle-adicional[data-value="1"] {
+  background-color: #ff5555;
+  color: white;
+}
+
+/* menu */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.navbar a .icon {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.navbar a.active {
+  color: #FF4500;
+  /* cor para o item ativo */
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  background-color: #FF4500;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+/* cardapio */
+.cardapio-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px 20px 40px;
+  z-index: 20;
+}
+
+.cardapio-banner h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.alimento {
+  background-color: #9E9E9E59;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto-alimento {
+  width: 100px;
+}
+
+/* adicionais */
+
+.alimento-container {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+.alimento-container img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.alimento-nome {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.alimento-preco {
+  color: #FF4500;
+  margin-left: 30px;
+  font-size: 23px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.adicional-container {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adicional-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.adicional-nome {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.adicional-preco {
+  color: #FF4500;
+  font-size: 19px;
+  text-align: left;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+.adicional-descricao {
+  font-size: 15px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.adicional-quantidade {
+  display: flex;
+  align-items: center;
+}
+
+.adicional-quantidade button {
+  background-color: white;
+  color: #ff5555;
+  border: 1px solid #ff5555;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+}
+
+.adicional-quantidade span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.botao-cardapio {
+  position: fixed;
+  right: 20px;
+  top: 110px;
+  background-color: #FF4500;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+.botao-confirmar {
+  background-color: #FF4500;
+  color: white;
+  text-align: center;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.botao {
+  background-color: #FF4500;
+  color: white;
+  text-align: center;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.btns-carrinho {
+  max-width: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
